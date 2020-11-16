@@ -74,22 +74,23 @@ h1 {
 }
 
 .formContainer__errorContainer {
-    display: block;
-    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-content: center;
     width: 100%;
     height: 40px;
 }
 
 .error-info {
     display: none;
-    margin: 0 auto;
+    text-align: center;
     font-family: Verdana;
     font-size: 14px;
     font-weight: bolder;
     letter-spacing: 1px;
     line-height: 40.5px;
     color: #D32F2F;
-    width: 45%;
+    width: 48%;
 }
 
 .formContainer__button {
