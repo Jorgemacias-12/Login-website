@@ -5,20 +5,40 @@
         <meta http-equiv='X-UA-Compatible' content='IE=edge'>
         <title>Formulario de inicio de sesión.</title>
         <meta name='viewport' content='width=device-width, initial-scale=1, user-scalable=no'>
-        <link rel='stylesheet' type='text/css' media='screen' href='styles.css'>
+        <link rel='stylesheet' type='text/css' media='screen' href='styles/styles.css'>
     </head>
     <body>
-        <div id="content">
-            <form action="" id="loging-form">
-                <div class="title">
-                    <h1>Inicio de sesion</h1>
+    
+        <div class="boy__container-instruccions">
+            <h1>Inicio de sesión</h1>
+        </div>
+        
+        <!-- #region Formulario de inicio de sesión-->
+        <div class="body__container-formContainer">
+            <form action="" class="container__formContainer-form">
+                <p class="formContainer__p-label">Nombre de usuario:</p>
+                <div class="formContainer__inputContainer-icons">
+                    <input type="text" class="formContainer__input" id="form__username">
                 </div>
-                <label for="username">Usuario:</label>
-                <input type="text" id="username" name="username">
-                <label for="password">Contraseña:</label>
-                <input type="password" id="password" name="password">
-                <button id="btn-login">Iniciar sesion</button>
+                <div class="formContainer__errorContainer">
+                    <p id="username__input-error" class="error-info">
+                        Error
+                    </p>
+                </div>
+                <p class="formContainer__p-label">Contraseña:</p>
+                <div class="formContainer__inputContainer-icons">
+                    <input type="password" class="formContainer__input" id="form__password">
+                </div>
+                <div class="formContainer__errorContainer">
+                    <p id="password__input-error" class="error-info">
+                        Error
+                    </p>
+                </div>
+                <button class="formContainer__button" id="form__login-button">
+                    Iniciar sesión
+                </button>
             </form>
         </div>
+        <!-- #endregion -->
     </body>
 </html>
