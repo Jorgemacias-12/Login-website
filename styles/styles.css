@@ -69,6 +69,33 @@ body {
     align-items: center;
 }
 
+.input-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: relative;
+}
+
+.input-group>.input {
+    width: 26%;
+    padding-right: 28px;
+}
+
+.input-group>.showPassword {
+    color: white;
+    position: absolute;
+    right: 35%;
+    margin: 0px;
+    margin-left: 3px;
+}
+
+.input-group>.showPassword:hover {
+    cursor: pointer;
+    color: #ccc;
+    transition: 0.1s all;
+}
+
 .error {
     width: 28%;
     height: 30px;
