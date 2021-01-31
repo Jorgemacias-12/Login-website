@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
     <link rel="stylesheet" href="styles/styles.css">
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title> Log in </title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src="https://kit.fontawesome.com/7f4f5e3479.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div class="app">
@@ -15,8 +16,31 @@
                     Iniciar sesión
                 </h1>
             </div>
-            <form action="" class="form">
+            <form action="scripts/login.php" class="form" method="POST" onsubmit="">
                 
+                <div class="components"> 
+
+                    <label for="username" class="label">
+                        Usuario:
+                    </label>
+
+                    <div class="inputContainer">
+                        <input type="text" id="username" class="input" name="username">
+                    </div>
+
+                    <label for="password" class="label">
+                        Contraseña:
+                    </label>
+
+                    <div class="inputContainer">
+                        <input type="password" id="password" class="input">
+                    </div>
+
+                    <button type="submit" class="button" id="btn-login">
+                        Iniciar sesión
+                    </button>
+
+                </div>
             </form>
         </div>
     </div>
