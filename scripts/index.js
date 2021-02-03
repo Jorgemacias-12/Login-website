@@ -14,6 +14,30 @@ function toggleIcon() {
   if (icon.classList.contains("fa-lock")) {
     icon.classList.replace("fa-lock", "fa-lock-open");
   } else {
-    icon.classList.replace("fa-lock-open","fa-lock");
+    icon.classList.replace("fa-lock-open", "fa-lock");
   }
+}
+
+function validate() {
+  const form = document.getElementsByClassName("form");
+  if (form[0].username.value == "") {
+    form[0].username.focus();
+    return false;
+  }
+
+  if (form[0].password.value == "") {
+    form[0].password.focus();
+    return false;
+  }
+
+  if (form[0].username.value == "" && form[0].password.value == "") {
+    form[0].username.focus();
+    form[0].password.focus();
+    return false;
+  }
+
+  if ( form[0].username.value != "" && form[0].password.value != "") {
+    return true;
+  }
+
 }
