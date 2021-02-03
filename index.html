@@ -16,7 +16,7 @@
                     Iniciar sesión
                 </h1>
             </div>
-            <form action="scripts/login.php" class="form" method="POST" onsubmit="">
+            <form action="scripts/login.php" onsubmit="return submit(this)" class="form" method="post">
                 
                 <div class="components"> 
 
@@ -34,18 +34,19 @@
 
                     <div class="inputContainer">
                         <div class="input-group">
-                            <input type="password" id="password" class="input">
+                            <input type="password" id="password" class="input" name="password">
                             <i class="fas fa-lock showPassword" id="showPassword"></i>
                         </div>
                     </div>
 
                     <button type="submit" class="button" id="btn-login">
-                        Iniciar sesión
+                        Iniciar sesión 
                     </button>
 
                 </div>
             </form>
         </div>
     </div>
+    <script src="scripts/index.js"></script>
 </body>
 </html>
