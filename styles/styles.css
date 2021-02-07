@@ -1,7 +1,7 @@
 * {
     font-family: arial;
     margin: 0px auto;
-    padding: 0px auto;
+    padding: 0px;
 }
 
 body {
@@ -86,7 +86,7 @@ body {
 .input-group>.showPassword {
     color: white;
     position: absolute;
-    right: 35%;
+    right: 60%;
     margin: 0px;
     margin-left: 3px;
 }
@@ -120,6 +120,21 @@ body {
     color: white;
     cursor: pointer;
     transition: 0.1s all;
+}
+
+.gen-error{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    width: 70%;
+    height: 15%;
+    background-color: #ff3333;
+}
+
+.gen-error > .error-text{
+    margin-left: 10px;
+    width: 90%;
 }
 
 .input {
