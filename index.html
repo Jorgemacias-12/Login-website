@@ -26,6 +26,12 @@
 
                     <div class="inputContainer">
                         <input type="text" id="username" class="input" name="username">
+                        <span class="error">
+                            <i class="fas fa-times closeable"></i>
+                            <p class="error-text">
+                                El campo esta vacio
+                            </p>
+                        </span>
                     </div>
 
                     <label for="password" class="label">
@@ -37,11 +43,24 @@
                             <input type="password" id="password" class="input" name="password">
                             <i class="fas fa-lock showPassword" id="showPassword"></i>
                         </div>
-                    </div>
+                        <span class="error">
+                            <i class="fas fa-times closeable"></i>
+                            <p class="error-text">
+                                El campo esta vacio
+                            </p>
+                        </span>
+                    </div>                    
 
                     <button type="submit" class="button" id="btn-login">
                         Iniciar sesión 
                     </button>
+
+                    <div class="gen-error error">
+                        <i class="fas fa-times closeable"></i>
+                        <p class="error-text">
+                            LLena los campos antes de seguir con el inicio de sesión.
+                        </p>
+                    </div>
 
                 </div>
             </form>
