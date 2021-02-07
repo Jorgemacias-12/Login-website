@@ -1,0 +1,110 @@
+@media screen and (max-width: 1280px) {
+    .center {
+        width: 50%;
+        height: 85%;
+    }
+    .error {
+        width: 35%;
+    }
+    .gen-error {
+        width: 60%;
+    }
+    .input {
+        width: 35%;
+    }
+    .input-group>.input {
+        width: 30%;
+    }
+    .input-group>.showPassword {
+        right: 32%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .center>.login-title {
+        height: 5%;
+    }
+    .components {
+        width: 100%;
+    }
+    .form {
+        margin-top: 50px;
+        align-items: unset;
+        height: 50%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .center {
+        width: 60%;
+        height: 100%;
+    }
+}
+
+/* Vista de telefonos */
+
+@media screen and (max-width: 414px) {
+    .center {
+        width: 85%;
+        height: auto;
+    }
+    .form {
+        height: 70%;
+    }
+    .input {
+        width: 50%;
+    }
+    .input-group>.input {
+        width: 40%;
+    }
+    .input-group>.showPassword {
+        right: 27%;
+    }
+    .error {
+        width: 50%;
+    }
+    .gen-error {
+        width: 70%;
+    }
+    .button {
+        width: 35%;
+    }
+}
+
+@media (max-width: 414px) and (max-height: 558px) {
+    .center {
+        width: 85%;
+        height: auto;
+    }
+    .form {
+        height: 85%;
+    }
+    .input {
+        width: 50%;
+    }
+    .input-group>.input {
+        width: 40%;
+    }
+    .input-group>.showPassword {
+        right: 27%;
+    }
+    .error {
+        width: 50%;
+    }
+    .gen-error {
+        width: 70%;
+        margin-top: 10px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .gen-error {
+        width: 80% !important;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .error{
+        width: 55%;
+    }
+}
