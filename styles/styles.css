@@ -126,9 +126,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 20px;
     width: 70%;
-    height: 30%;
+    height: 80%;
     background-color: #ff3333;
 }
 
@@ -138,8 +137,11 @@ body {
 }
 
 .main-error{
+    display: flex;
+    align-items: center;
     width: 100%;
-    height: 100%;
+    height: 20%;
+    margin-top: 20px;
 }
 
 .input {
