@@ -32,7 +32,6 @@ function validate() {
 
   if (form[0].username.value == "" && form[0].password.value == "") {
     form[0].username.focus();
-    form[0].password.focus();
     return false;
   }
 
@@ -41,3 +40,19 @@ function validate() {
   }
 
 }
+
+function closeElement(){
+  var closeableElements = document.getElementsByClassName("closeable");
+  console.log(closeableElements.length);
+  if ( typeof (closeableElements) != 'undefined' && closeableElements) {
+    for ( let i = 0; i < closeableElements.length; i++) {
+      closeableElements[i].addEventListener("click", function(){
+        const parentToClose = closeableElements[i].parentElement;
+        const parent = parentToClose.parentNode;
+        parent.removeChild(parentToClose);
+      });
+    }
+  } else {}
+}
+
+closeElement();
